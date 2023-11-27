@@ -13,6 +13,11 @@ public class ConstrucaoStream {
         //Passando um Array de notas para o Stream
         Number[] maisNotas = {7, 6.5, 7.2, 9};
         Stream.of(maisNotas).forEach(System.out::println);
+
+        System.out.println("****");
+
+        //Executar de forma desordenada
+        Stream.of(maisNotas).parallel().forEach(System.out::println);
         
     }
 }
